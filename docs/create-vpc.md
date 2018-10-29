@@ -2,12 +2,12 @@
 
 ## Cloudformation Template
 
-From inside the repo directory on your installation system, set a few environment variables.  Note: You will need the AMI for your region to be correct.  See: [Ubuntu 16.0.4 LTS](http://cloud-images.ubuntu.com/locator/ec2/) and search for '16.04 LTS hvm:ebs-ssd'
+From inside the repo directory on your installation system, set a few environment variables.  Note: You will need the AMI for your region to be correct.  See: [Ubuntu 18.0.4 LTS](http://cloud-images.ubuntu.com/locator/ec2/) and search for '16.04 LTS hvm:ebs-ssd'
 ```
 $ export STACK_NAME="hkfs"
 export AWS_DEFAULT_REGION="us-east-1"
 export KEY_NAME="hkfs"
-export IMAGE_ID="ami-66506c1c"
+export IMAGE_ID="ami-0ac019f4fcb7cb7e6"
 ```
 
 Deploy the Cloudformation template to create the VPC, subnet, route table, route table association, and internet gateway.
